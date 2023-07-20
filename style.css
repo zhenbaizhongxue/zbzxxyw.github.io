@@ -13,10 +13,23 @@ body {
     font-family: Arial, sans-serif; /* 设置字体 */
 }
 
+
 header {
     /* 设置背景色和透明度，以使文本内容更加清晰可见 */
     background-color: rgba(255, 255, 255, 0.7);
     padding: 20px; /* 添加内边距，增加内容与背景之间的间距 */
+}
+
+/* 设置自定义图标样式 */
+h1.custom-icon {
+    display: inline-block;
+    width: 32px; /* 设置图标的宽度 */
+    height: 32px; /* 设置图标的高度 */
+    background-image: url('images/your_image.jpg'); /* 将图片路径替换为你的图片路径 */
+    background-size: cover;
+    background-position: center;
+    vertical-align: middle;
+    margin-right: 10px; /* 调整图标和标题之间的间距 */
 }
 
 /* 设置导航链接样式 */
@@ -53,10 +66,4 @@ footer {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.7);
     padding: 10px;
-}
-
-/* 设置图标和标题垂直居中 */
-h1 i {
-    vertical-align: middle;
-    margin-right: 10px; /* 调整图标和标题之间的间距 */
 }
