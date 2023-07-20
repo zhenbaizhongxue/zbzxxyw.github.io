@@ -1,6 +1,6 @@
 body {
     /* 设置背景图片URL */
-    background-image: url('https://github.com/zhenbaizhongxue/zhenbaizhongxue.github.io/blob/296cbfee180d7a1a0f10b6700b5238683f3e0e5f/%E8%B4%9E%E7%99%BD%E7%A9%BA%E6%99%AF.jpg');
+    background-image: url('https://github.com/zhenbaizhongxue/zhenbaizhongxue.github.io/blob/296cbfee180d7a1a0f10b6700b5238683f3e0e5f/%E8%B4%9E%E7%99%BD%E7%A9%BA%E6%99%AF.jpg'); /* 将图片路径替换为你的背景图片路径 */
     /* 设置背景图片尺寸和位置 */
     background-size: cover;
     background-position: center;
@@ -12,18 +12,19 @@ body {
     padding: 0; /* 去除默认的页面内边距 */
     font-family: Arial, sans-serif; /* 设置字体 */
 }
+
 header {
     /* 设置背景色和透明度，以使文本内容更加清晰可见 */
     background-color: rgba(255, 255, 255, 0.7);
     padding: 20px; /* 添加内边距，增加内容与背景之间的间距 */
 }
 
-/* 设置自定义图标样式 */
+/* 设置自定义图片作为标题图标 */
 h1.custom-icon {
     display: inline-block;
     width: 32px; /* 设置图标的宽度 */
     height: 32px; /* 设置图标的高度 */
-    background-image: url('https://github.com/zhenbaizhongxue/zhenbaizhongxue.github.io/blob/372d7281f9d7a57d2fb8de77367e78ac4970be33/%E8%B4%9E%E7%99%BD%E5%9B%BE%E6%A0%87.jpg'); /* 将图片路径替换为你的图片路径 */
+    background-image: url('https://github.com/zhenbaizhongxue/zhenbaizhongxue.github.io/blob/372d7281f9d7a57d2fb8de77367e78ac4970be33/%E8%B4%9E%E7%99%BD%E5%9B%BE%E6%A0%87.jpg'); /* 将图片路径替换为你的图标图片路径 */
     background-size: cover;
     background-position: center;
     vertical-align: middle;
