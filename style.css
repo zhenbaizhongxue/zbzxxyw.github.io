@@ -25,7 +25,7 @@ h1.custom-icon {
     display: inline-block;
     width: 32px; /* 设置图标的宽度 */
     height: 32px; /* 设置图标的高度 */
-    background-image: url('images/your_image.jpg'); /* 将图片路径替换为你的图片路径 */
+    background-image: url('https://github.com/zhenbaizhongxue/zhenbaizhongxue.github.io/blob/372d7281f9d7a57d2fb8de77367e78ac4970be33/%E8%B4%9E%E7%99%BD%E5%9B%BE%E6%A0%87.jpg'); /* 将图片路径替换为你的图片路径 */
     background-size: cover;
     background-position: center;
     vertical-align: middle;
