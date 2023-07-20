@@ -23,7 +23,10 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2); /* 设置背景颜色及透明度 */
+    background-image: url('airview.jpg'); /* 设置背景图片，这里再次指定为背景图片 */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* 设置背景图片的透明度，值范围为0到1 */
     z-index: -1; /* 将伪元素置于底层，使其在背景图片之上 */
 }
 
@@ -84,7 +87,7 @@ header h1, header h2 {
 /* 设置标题栏的背景色和透明度 */
 header {
     /* 设置背景色和透明度，以使文本内容更加清晰可见 */
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 20px; /* 添加内边距，增加内容与背景之间的间距 */
 }
 
