@@ -18,12 +18,19 @@
             font-family: Arial, sans-serif; /* 设置字体 */
         }
 
-        header, nav, section, footer {
-            /* 设置背景色和透明度，以使文本内容更加清晰可见 */
+      header {
+            /* 设置标题区域样式 */
             background-color: rgba(255, 255, 255, 0.5);
             padding: 20px; /* 添加内边距，增加内容与背景之间的间距 */
+            display: flex; /* 使用flex布局，让标题和图标并排显示 */
+            align-items: center; /* 垂直居中对齐 */
         }
-
+              /* 设置标题图标样式 */
+        .icon {
+            width: 40px; /* 调整图标的大小 */
+            height: 40px; /* 调整图标的大小 */
+            margin-right: 10px; /* 图标和标题之间的间距 */
+        }
         /* 设置导航链接样式 */
         nav a {
             text-decoration: none;
@@ -63,6 +70,7 @@
 </head>
 <body>
     <header>
+        <img class="icon" src="logo.jpg" alt="页面图标">
         <h1>欢迎来到贞白中学校友网的主页！</h1>
         <h1>本网站由贞白校友创建并完善。</h1>
     </header>
@@ -138,7 +146,6 @@
                </ul>
         </ul>
     </section>
-    
     <footer>
         <p>版权所有 &copy; 2023 贞白中学校友创建，贞白中学有权回收该网站以及绑定的谷歌账号</p>
     </footer>
