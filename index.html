@@ -16,9 +16,9 @@
             margin: 0; /* 去除默认的页面边距 */
             padding: 0; /* 去除默认的页面内边距 */
             font-family: Arial, sans-serif; /* 设置字体 */
-            display: flex; /* 使用Flexbox布局 */
-            justify-content: center; /* 居中显示内容 */
-            align-items: center; /* 垂直居中显示内容 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         header, nav, section, footer {
@@ -29,7 +29,7 @@
 
         /* 设置导航链接样式 */
         nav a {
-             color: #333;
+            color: #333;
         }
 
         /* 设置段落样式 */
@@ -49,35 +49,45 @@
             background-color: rgba(255, 255, 255, 0.7);
             padding: 10px;
         }
-        
-        /* 设置右侧图片样式 */
-        .image-container {
-            flex: 1; /* 占据剩余空间 */
-            display: flex;
-            justify-content: center;
-            align-items: center;
+
+        /* 设置左侧文本样式 */
+        .text-container {
+            max-width: 50%;
+            padding: 20px;
         }
 
-        .image-container img {
-            max-width: 100%; /* 图片最大宽度为容器宽度 */
-            opacity: 0.7; /* 背景图片透明度 */
+        .text-container h1, .text-container h2 {
+            text-align: center;
+        }
+
+        /* 设置右侧图片样式 */
+        .image-container {
+            max-width: 50%;
+            background-image: url('logo.jpg'); /* 替换为您的图片URL */
+            background-size: cover;
+            background-position: center;
+            opacity: 0.7;
+        }
+
+        /* 设置容器的Flex布局，将左侧文本和右侧图片并排显示 */
+        .content-container {
+            display: flex;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>欢迎来到贞白中学校友网的主页！</h1>
-        <h2>本网页由贞白校友创建并完善。</h2>
-    </header>
-    <div class="image-container">
-        <img src="logo.jpg" alt="背景图片">
-    </div>
-    <nav>
-        <ul>
-            <li><a href="https://baike.baidu.com/item/%E8%B4%9E%E7%99%BD%E4%B8%AD%E5%AD%A6/24378958">百度百科简介</a></li>
-            <li><a href="https://baike.sogou.com/v185210564.htm">搜狗简介</a></li>
-        </ul>
-    </nav>
+    <div class="content-container">
+        <div class="text-container">
+            <header>
+                <h1>欢迎来到贞白中学校友网的主页！</h1>
+                <h2>本网页由贞白校友创建并完善。</h2>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="https://baike.baidu.com/item/%E8%B4%9E%E7%99%BD%E4%B8%AD%E5%AD%A6/24378958">百度百科简介</a></li>
+                    <li><a href="https://baike.sogou.com/v185210564.htm">搜狗简介</a></li>
+                </ul>
+            </nav>
 
     <section>
         <h3>校训</h3>
@@ -143,7 +153,10 @@
     </section>
     
     <footer>
-        <p>版权所有 &copy; 2023 贞白中学校友创建，贞白中学有权回收该网站以及绑定的谷歌账号</p>
-    </footer>
+                <p>版权所有 &copy; 2023 贞白中学校友创建，贞白中学有权回收该网站以及绑定的谷歌账号</p>
+            </footer>
+        </div>
+        <div class="image-container"></div>
+    </div>
 </body>
 </html>
