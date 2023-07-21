@@ -47,7 +47,25 @@
             margin: 0;
             padding: 10px;
         }
+/* CSS 样式用于定位音频播放器 */
+        .audio-container {
+            position: relative;
+            width: 300px; /* 自定义宽度 */
+        }
 
+        audio {
+            width: 100%;
+        }
+
+        .audio-controls {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 5px;
+        }
         /* 设置页脚文本样式 */
         footer {
             text-align: center;
@@ -82,13 +100,20 @@
             </li>
         </ul>
     </div>
+    <div class="audio-container">
+        <audio controls="controls" autoplay="autoplay" loop="loop">
+           <source src="bgm_split.ogg" type="audio/ogg">
+           <source src="bgm_split.mp3" type="audio/mpeg">
+           <embed height="100" width="100" src="bgm_split.mp3" />
+            Your browser does not support the audio element.
+        </audio>
+        <div class="audio-controls">
+            <!-- 这里可以添加额外的音频控制按钮，如播放、暂停、音量等 -->
+        </div>
+    </div>
     <div>
         <img style="position : absolute; right: 200px; border-radius:150px; border: none;" width = "300" height= "300"  src="logo_circle.png" />
-<audio controls="controls" autoplay="autoplay" loop="loop">
-      <source src="bgm_split.ogg" type="audio/ogg">
-      <source src="bgm_split.mp3" type="audio/mpeg">
-      <embed height="100" width="100" src="bgm_split.mp3" />
-</audio>
+
         <h3>Q & A</h3>
            <ul>
             <li>这些群是用来干嘛的？
