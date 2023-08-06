@@ -85,6 +85,9 @@ li{
         width: 0;
         visibility: hidden;
     }
+    #headimg{
+        height: 50px;
+    }
 }
 
 /* 设置页脚文本样式 */
