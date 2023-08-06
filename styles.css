@@ -1,1 +1,112 @@
+body {
+    /* 设置背景图片URL */
 
+    /* 设置背景图片尺寸和位置 */
+    background-size: cover;
+    background-position: center;
+    /* 设置背景图片固定，以确保内容滚动而不是背景 */
+    background-attachment: fixed;
+    /* 设置背景图片的高度，使其填满整个视口 */
+    height: 100vh;
+    margin: 0; /* 去除默认的页面边距 */
+    padding: 0; /* 去除默认的页面内边距 */
+    font-family: Arial, sans-serif; /* 设置字体 */
+}
+h1, h2 {
+    margin: 0;
+    padding: 10px;
+}
+#english{
+    font-style:oblique;
+    padding: 5px;
+
+}
+.motto{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    text-shadow: 3px 3px 5px  hsl(0,100%,61%),   -3px -3px 5px  hsl(197,100%,61%);
+}
+@font-face{
+    src: url(fonts/fontstyle.ttf);
+    font-family: Dancing+Script;
+}
+#statement1::before{
+      content:"🎉";
+}
+
+#sideicon:hover{
+    box-shadow: 3px 3px 8px;
+    cursor: pointer;
+}
+#statement2::before{
+    content: "🙌";
+    right: 5px;
+}
+#mail:hover{
+    cursor: pointer;
+}
+
+#question li::marker{
+    content: "✅" !important;
+}
+#block li::marker{
+    content: "❓";
+}
+#notice li::marker{
+    content: "🎈" !important;
+}
+#answers li::marker{
+    content: "📢";
+}
+
+
+
+
+
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+header{
+    background-color: hsl(0, 0%, 86%);
+    text-align: center;
+    background-image: url(images/airview1.png) ;
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+/* 设置导航链接样式 */
+nav a {
+    color: #333;
+}
+
+/* 设置段落样式 */
+p {
+    line-height: 1.6;
+}
+ul{
+    margin-left: 10px;
+    padding: 5px;
+  }
+li{
+    margin-left: 10px;
+     padding: 5px;
+}
+/* 设置h1和h2的样式 */
+
+@media screen and (max-width:1100px) {
+    #sideicon{
+        width: 0;
+        visibility: hidden;
+    }
+}
+
+/* 设置页脚文本样式 */
+footer {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+}
