@@ -61,6 +61,34 @@ header{
 
 }
 
+
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0px;
+    margin: 0px;
+    height: 60px;
+    overflow: hidden;
+}
+.navbar a{
+    color: white;
+    text-decoration:none;
+    padding:15px ;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: hsl(0, 0%, 10%);
+
+}
+
+.navbar li{
+    float: left;
+}
+.navbar .content{
+    display: block;
+}
 /* 设置导航链接样式 */
 nav a {
     color: #333;
@@ -95,4 +123,7 @@ footer {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.7);
     padding: 10px;
+    position: fixed; /* 使用 fixed 定位 */
+    bottom: 0; /* 将底部设置为 0，表示页面底部 */
+    width: 100%; /* 让注脚横向铺满整个页面 */
 }
