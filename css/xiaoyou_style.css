@@ -1,0 +1,130 @@
+
+h1, h2 {
+    margin: 0;
+    padding: 10px;
+}
+#english{
+    font-style:oblique;
+    padding: 5px;
+
+}
+@font-face{
+    src: url(fonts/fontstyle.ttf);
+    font-family: Dancing+Script;
+}
+.motto{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    text-shadow: 3px 3px 5px  hsl(0,100%,61%),   -3px -3px 5px  hsl(197,100%,61%);
+}
+
+#statement1::before{
+      content:"🎉";
+}
+
+#sideicon:hover{
+    box-shadow: 3px 3px 8px;
+    cursor: pointer;
+}
+#statement2::before{
+    content: "🙌";
+    right: 5px;
+}
+#mail:hover{
+    cursor: pointer;
+}
+
+#question li::marker{
+    content: "✅" !important;
+}
+#block li::marker{
+    content: "❓";
+}
+#notice li::marker{
+    content: "🎈" !important;
+}
+#answers li::marker{
+    content: "📢";
+}
+
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+header{
+    background-color: hsl(0, 0%, 86%);
+    text-align: center;
+    background-image: url(images/airview1.png) ;
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0px;
+    margin: 0px;
+    height: 60px;
+    overflow: hidden;
+}
+.navbar a{
+    color: white;
+    text-decoration:none;
+    padding:15px ;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: hsl(0, 0%, 10%);
+
+}
+
+.navbar li{
+    float: left;
+}
+.navbar .content{
+    display: block;
+}
+/* 设置导航链接样式 */
+nav a {
+    color: #333;
+}
+
+/* 设置段落样式 */
+p {
+    line-height: 1.6;
+}
+ul{
+    margin-left: 10px;
+    padding: 5px;
+  }
+li{
+    margin-left: 10px;
+     padding: 5px;
+}
+/* 设置h1和h2的样式 */
+
+@media screen and (max-width:1100px) {
+    #sideicon{
+        width: 0;
+        visibility: hidden;
+    }
+    #headimg{
+        height: 50%;
+    }
+}
+
+/* 设置页脚文本样式 */
+footer {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    position: fixed; /* 使用 fixed 定位 */
+    bottom: 0; /* 将底部设置为 0，表示页面底部 */
+    width: 100%; /* 让注脚横向铺满整个页面 */
+  }
